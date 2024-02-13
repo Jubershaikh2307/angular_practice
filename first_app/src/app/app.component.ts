@@ -10,4 +10,12 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   name = "Juber";
+  content="";
+  getValue=(e:string) => {
+    console.log(e)
+    this.content=e
+  };
+  getData = () => {
+    console.log({"1":this.content,name})
+  }
 }
